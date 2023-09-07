@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
+        /*using the puts command*/
 
-	char str[] = "Programming is like building a multilingual puzzle\n";
-
-	puts(str);
+	puts("Programming is like building a multilingual puzzle\n");
 
 	return (0);
 }	

@@ -7,12 +7,14 @@
  */
 int main(void)
 {
-	for (int num1 = 0; num1 < 100; num1++)
+	int num1, num2;
+
+	for (num1 = 0; num1 < 100; num1++)
 	{
 		int tens1 = num1 / 10;
 		int ones1 = num1 % 10;
 
-		for (int num2 = num1; num2 < 100; num2++)
+		for (num2 = num1; num2 < 100; num2++)
 		{
 			int tens2 = num2 / 10;
 			int ones2 = num2 % 10;

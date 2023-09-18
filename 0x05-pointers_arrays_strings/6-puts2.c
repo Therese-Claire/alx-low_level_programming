@@ -2,19 +2,20 @@
 
 /**
  * puts2 - Function to print every other character of a string.
- * @str: stored the string inputted
+ * @str: pointer to the string.
  *
  */
 void puts2(char *str)
 {
-	int i;
-	char ch;
+	int i, length;
 
-	while (str[i] != '\0')
+	while (str[length] != 0)
+		length++;
+	for (i = 0; i < length; i++)
 	{
-		ch = str[i];
-		_putchar(ch);
-		i += 2;
+		if (i % 2 != 0)
+			continue;
+		_putchar(str[i]);
 	}
 
 	_putchar('\n');

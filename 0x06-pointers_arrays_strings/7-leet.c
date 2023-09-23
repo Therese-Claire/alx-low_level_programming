@@ -16,7 +16,7 @@ char *leet(char *str)
 	{
 		int i = 0;
 
-		while (leet[i])
+		while (leetChar[i])
 		{
 			if (*ptr == leetChar[i])
 			{

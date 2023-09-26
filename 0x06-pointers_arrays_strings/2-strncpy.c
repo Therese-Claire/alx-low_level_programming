@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncpy - This functioncopies a string from src to dest.
+ * *_strncpy - This function copies a string from src to dest.
  * @dest: first pointer that points to char.
  * @src: second pointer that points to char.
  * @n: the number of bytes.

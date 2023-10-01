@@ -6,12 +6,17 @@
  */
 int _sqrt_recursion(int n)
 {
+	int guess;
+	int nextGuess;
+
 	if (n < 0)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-	int guess = _sqrt_recursion(n / 2);
-	int nextGuess = (guess + n / guess) / 2;
+
+	guess = _sqrt_recursion(n / 2);
+
+	nextGuess = (guess + n / guess) / 2;
 
 	if (nextGuess >= guess)
 	{

@@ -16,6 +16,8 @@ char *str_concat(char *s1, char *s2)
 	size_t length1;
 	size_t length2;
 
+	catPtr = s1;
+
 	if (s1 == NULL)
 		return (NULL);
 	if (s2 == NULL)
@@ -33,6 +35,5 @@ char *str_concat(char *s1, char *s2)
 
 	strcpy(catPtr, s1);
 	strcat(catPtr, s2);
-
 	return (catPtr);
 }

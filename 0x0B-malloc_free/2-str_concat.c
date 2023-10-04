@@ -13,15 +13,18 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *catPtr;
-	size_t length;
+	size_t length1;
+	size_t length2;
 
 	if (s1 == NULL)
 		return (NULL);
 	if (s2 == NULL)
 		return (NULL);
 
-	length = strlen(s1) + strlen(s2);
-	catPtr = malloc(sizeof(char) * length + 1);
+	length1 = strlen(s1);
+	length2 = strlen(s2);
+
+	catPtr = malloc(sizeof(char) * (length1 + length2 + 1));
 
 	if (catPtr == NULL)
 	{

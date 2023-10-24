@@ -1,24 +1,27 @@
 #include "lists.h"
 /**
  * free_listint_safe - Prints a listint_t linked list.
- * @head: double pointer to the head of the list.
+ * @h: double pointer to the head of the list.
  *
  * Return: The number of nodes in the list.
  */
-size_t free_listint_safe(listint_t *head)
+size_t free_listint_safe(listint_t **h)
 {
 	size_t size = 0;
 	listint_t *current, *next;
 
-	if (head == NULL || *head == NULL)
+	if (h == NULL || *h == NULL)
 		return (size);
-	for (current = *head; current != NULL && current > current->next; current = next)
+
+	current = *h;
+	while (current != NULL && current > current->next)
 	{
 		size++;
-		next = curent->next;
+		next = current->next;
 		free(current);
+		current = next;
 	}
 
-	*head = NULL;
+	*h = NULL;
 	return (size);
 }

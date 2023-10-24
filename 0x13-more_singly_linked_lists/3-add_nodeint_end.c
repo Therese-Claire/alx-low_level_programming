@@ -5,7 +5,7 @@
  * @head: points to the pointer of the link list
  * @n: element to add at end of the linked list
  *
- * Return: addr of new element. Otherwise, NULL if fails
+ * Return: addr of new element. Otherwise, NULL if fail.
  */
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
